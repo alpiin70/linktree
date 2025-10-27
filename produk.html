@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daftar Produk — Garfinn Store</title>
+  <style>
+    :root {
+      --bg: linear-gradient(135deg,#57b0c3 0%,#99c4ff 65%,#95e0ff 100%);
+      --card-bg: rgba(255,255,255,0.25);
+      --text: #ffffff;
+      --muted: #e6f5ff;
+      --price: #9affc1;
+      --radius: 16px;
+      font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: var(--bg);
+      min-height: 100vh;
+      padding: 20px;
+      color: var(--text);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.4);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: var(--text);
+    }
+    .card img {
+      width: 100%;
+      border-radius: var(--radius);
+      height: 160px;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+      color: #fff;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    }
+    .card p {
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+    .price {
+      color: var(--price);
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 10px;
+      text-shadow: 0 1px 5px rgba(0,0,0,0.25);
+    }
+    .btn {
+      display: inline-block;
+      background: rgba(255,255,255,0.3);
+      padding: 10px 12px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #0a1a25;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.4);
+      transition: transform .12s ease, box-shadow .12s ease, background .2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      background: rgba(255,255,255,0.6);
+    }
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #f2f8ff;
+      text-decoration: underline;
+    }
+
+    /* 🔹 Responsif: 2 kartu per baris di HP */
+    @media (max-width: 640px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+      .card {
+        padding: 12px;
+      }
+      .card img {
+        height: 120px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      .price {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Daftar Produk Garfinn Store</h1>
+  <div class="grid">
+    <div class="card">
+      <img src="koin.jpg" alt="Produk 1">
+      <h3>1M Koin via mitos</h3>
+      <p class="price">Rp 20.000</p>
+      <a href="https://wa.me/6283876421238?text=Halo%20saya%20ingin%20beli%20Ikan%20Rare" target="_blank" class="btn">Pesan Sekarang</a>
+    </div>
+    <div class="card">
+      <img src="ikan.jpeg" alt="Produk 2">
+      <h3>Ikan</h3>
+      <p class="price">PM</p>
+      <a href="https://wa.me/6283876421238?text=Halo%20saya%20ingin%20beli%20Koin%20Premium" target="_blank" class="btn">Pesan Sekarang</a>
+    </div>
+    <!-- <div class="card">
+      <img src="produk3.jpg" alt="Produk 3">
+      <h3>Bundle Spesial</h3>
+      <p class="price">Rp 30.000</p>
+      <a href="https://wa.me/6283876421238?text=Halo%20saya%20ingin%20beli%20Bundle%20Spesial" target="_blank" class="btn">Pesan Sekarang</a>
+    </div> -->
+  </div>
+  <a href="index.html" class="back">← Kembali ke Halaman Utama</a>
+</body>
+</html>
+

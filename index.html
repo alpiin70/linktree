@@ -34,7 +34,6 @@
       box-shadow:0 6px 30px rgba(0,0,0,0.15);
       backdrop-filter: blur(10px);
       border:1px solid rgba(255,255,255,0.3);
-      transition: all 0.3s ease;
     }
     .profile{text-align:center;margin-bottom:24px;}
     .avatar{width:96px;height:96px;border-radius:50%;overflow:hidden;margin:0 auto 12px;border:2px solid rgba(255,255,255,0.4);}
@@ -50,56 +49,11 @@
       text-decoration:none;
       color:var(--text);
       font-weight:600;
-      transition:transform .12s ease, box-shadow .12s ease, background .3s ease;
+      transition:transform .12s ease, box-shadow .12s ease;
       border:1px solid rgba(255,255,255,0.4);
     }
-    .link-btn:hover{
-      transform:translateY(-4px);
-      box-shadow:0 6px 20px rgba(0,0,0,0.2);
-      background:var(--accent);
-      color:white;
-    }
+    .link-btn:hover{transform:translateY(-4px);box-shadow:0 6px 20px rgba(0,0,0,0.2);}
     .footer{text-align:center;margin-top:20px;font-size:12px;color:var(--muted);}
-
-    /* === Responsif === */
-    @media (max-width: 768px) {
-      body {
-        padding:16px;
-      }
-      .card {
-        padding:20px;
-      }
-      h1 {
-        font-size:20px;
-      }
-      p {
-        font-size:13px;
-      }
-      .link-btn {
-        font-size:14px;
-        padding:10px 12px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .avatar {
-        width:80px;
-        height:80px;
-      }
-      h1 {
-        font-size:18px;
-      }
-      p {
-        font-size:12px;
-      }
-      .link-btn {
-        font-size:13px;
-        padding:9px 10px;
-      }
-      .card {
-        border-radius:12px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -111,13 +65,13 @@
         </div>
         <h1>Garfinn Store</h1>
         <p>@garfinn.store</p>
-        <p>Store Fish it terpercaya 🐟</p>
+        <p>Tempat beli ikan & koin terpercaya 🐟💰</p>
       </div>
 
       <div class="links">
         <a href="https://instagram.com/garfinn.store" target="_blank" class="link-btn">Instagram</a>
         <a href="https://whatsapp.com/channel/0029VbBPGzf9cDDiLIjTcX2Q" target="_blank" class="link-btn">Saluran WhatsApp</a>
-        <a href="https://wa.me/+6283876421238" class="link-btn">Beli Ikan / Koin</a>
+        <a href="produk.html" class="link-btn">Daftar Produk</a>
       </div>
 
       <div class="footer">© 2025 Garfinn Store</div>
